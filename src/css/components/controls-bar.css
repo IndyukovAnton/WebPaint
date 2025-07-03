@@ -1,0 +1,101 @@
+
+.controls-bar {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+.controls-bar__options {
+	display: flex;
+	align-items: start;
+	gap: 20px;
+}
+
+.option-input__wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.option-input__wrapper:has(.option-input__color-wrapper) {
+	display: flex;
+	align-items: center;
+}
+
+.option-input {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.option-input::before {
+	content: attr(data-title);
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	font-size: var(--input-header-fs);
+	color: var(--input-header-color);
+	transform: translateX(-50%);
+}
+
+.option-input_value {
+	display: block;
+	font-size: var(--input-value-fs);
+	color: var(--input-value-color);
+	font-weight: 600;
+}
+
+.option-input__color {
+	appearance: none;
+	border: none;
+	width: 120%;
+	height: 120%;
+	position: absolute;
+	margin-bottom: 0;
+	top: -10%;
+	left: -10%;
+
+	&::before {
+		content: unset;
+	}
+}
+
+.option-input__color-wrapper {
+	position: relative;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+}
+
+.option-input__thickness {
+}
+.option-input__opacity {
+}
+
+/* Option buttons */
+
+.option-button__clear {
+}
+.option-button__save {
+}
+.option-button__load {
+}
+.option-button__undo {
+}
+.option-button__redo {
+}
+
+
+/* Figures */
+
+.controls-bar__figures {
+	display: flex;
+	gap: 20px;
+}
+
+.figures_button__line {
+}
+.figures_button__square {
+}
+.figures_button__circle {
+}

@@ -1,0 +1,9 @@
+@import url('./vars.css');
+@import url('./normalize.css');
+@import url('./settings.css');
+@import url('./components.css');
+
+
+/* PAGES */
+
+@import url('./pages/index.css');

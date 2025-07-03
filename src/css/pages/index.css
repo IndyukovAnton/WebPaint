@@ -1,0 +1,10 @@
+
+
+.figure {
+	position: absolute;
+}
+
+.figure.selected {
+	border: 4px solid #000;
+	background-color: #8e8e8e89 !important;
+}
