@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Online Paint</title>
+	<link rel="stylesheet" href="src/styles/normalize.css">
+	<link rel="stylesheet" href="src/styles/main.css">
+	<link rel="stylesheet" href="src/styles/index.css">
+</head>
+<body>
+	<div class="top">
+		<div class="top__container container">
+			<div class="settings">
+				<button data-action="clear" class="button settings_button__clear">Clear</button>
+				<button data-action="save" class="button settings_button__save">Save</button>
+				<button data-action="load"  class="button settings_button__load">Load</button>
+				<button data-action="undo" class="button settings_button__undo">Undo</button>
+				<button data-action="redo" class="button settings_button__redo">Redo</button>
+
+				<div class="settings_input__wrapper">
+					<input data-action="change-color" type="color" data-title='Color' class="settings_input settings_input__color" value='#000000'>
+					<span class="settings_input_value settings_input__color_value">#000000</span>
+				</div>
+				
+
+				<div class="settings_input__wrapper">
+					<input data-action="change-thickness" type="range" data-title='Thickness' class="settings_input settings_input__thickness" min="1" max="100" value='1'>
+					<span class="settings_input_value settings_input__thickness_value">1</span>
+				</div>
+
+				<div class="settings_input__wrapper">
+					<input data-action="change-opacity" type="range" data-title='Opacity' class="settings_input settings_input__opacity" min="1" max="100" value='100'>
+					<span class="settings_input_value settings_input__opacity_value">100</span>
+				</div>
+
+				<div class="settings_input__wrapper">
+					<input data-action="change-radius" type="range" data-title='Radius' class="settings_input settings_input__radius" min="1" max="50" value='0'>
+					<span class="settings_input_value settings_input__radius_value">0</span>
+				</div>
+			</div>
+			
+			<div class="figures">
+				<button data-type="line" class="button-choose-figure button figures_button__line">Line</button>
+				<button data-type="square" class="button-choose-figure button figures_button__square">Square</button>
+				<button data-type="circle" class="button-choose-figure button figures_button__circle">Circle</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="draw-panel"></div>
+
+	<script src='src/scripts/index.js' type='module'></script>
+</body>
+</html>

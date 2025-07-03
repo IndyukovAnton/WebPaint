@@ -1,0 +1,52 @@
+body {
+	height: 100vh;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.top__container {
+	max-width: 1000px;
+	padding-top: 20px;
+	flex-direction: column;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	row-gap: 40px;
+}
+
+.figures {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.active {
+	background-color: #57c975;
+	color: #e9e9e9;
+}
+
+.button {
+	padding: 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+	background-color: #9e9e9e;
+	color: #e9e9e9;
+}
+
+.button:active {
+	background-color: #57c975;
+	color: #e9e9e9;
+}
+
+.settings {
+	display: flex;
+	gap: 20px;
+}
